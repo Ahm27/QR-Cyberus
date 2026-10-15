@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#20868A" />
+  <title>Cyberus | Official Links</title>
+
+  <style>
+    :root {
+      --primary: #20868A;
+      --primary-dark: #155E63;
+      --background: #F8FAFA;
+      --text: #172B30;
+      --muted: #66777B;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    .header {
+      height: 220px;
+      background: var(--primary);
+    }
+
+    .container {
+      width: min(100% - 32px, 520px);
+      margin: -100px auto 0;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+
+    .logo-card {
+      width: 190px;
+      height: 190px;
+      background: var(--primary);
+      border: 4px solid white;
+      border-radius: 18px;
+      margin: 0 auto 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,.12);
+    }
+
+    .logo-card img {
+      width: 85%;
+      height: 85%;
+      object-fit: contain;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+      letter-spacing: -1px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: var(--muted);
+      margin-bottom: 38px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 18px;
+      min-height: 90px;
+      text-align: left;
+      text-decoration: none;
+      color: white;
+      background: var(--primary-dark);
+      border-radius: 14px;
+      transition: transform .2s, background .2s,
+                  box-shadow .2s;
+    }
+
+    .link:hover {
+      background: var(--primary);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    }
+
+    .link:focus-visible {
+      outline: 3px solid #E3AE44;
+      outline-offset: 3px;
+    }
+
+    .link-icon {
+      width: 50px;
+      height: 50px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: white;
+      overflow: hidden;
+    }
+
+    .link-icon img {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+
+    .link-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .link-title {
+      display: block;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .link-description {
+      display: block;
+      font-size: 14px;
+      color: #D3E7E7;
+    }
+
+    .arrow {
+      font-size: 28px;
+      font-weight: 300;
+    }
+
+    footer {
+      margin-top: 48px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 480px) {
+      .header { height: 190px; }
+      .container { margin-top: -85px; }
+      .logo-card {
+        width: 170px;
+        height: 170px;
+      }
+      h1 { font-size: 29px; }
+      .link { padding: 15px; }
+      .link-title { font-size: 19px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header"></header>
+
+  <main class="container">
+    <div class="logo-card">
+      <img
+        src="logo.png"
+        alt="Cyberus Logo"
+      />
+    </div>
+
+    <h1>Cyberus</h1>
+    <p class="subtitle">Security Encapsulated</p>
+
+    <nav class="links" aria-label="Cyberus links">
+
+      <a
+        class="link"
+        href="https://www.facebook.com/cyberustud"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="link-icon">
+          <img
+            src="https://cdn.simpleicons.org/facebook/1877F2"
+            alt=""
+          />
+        </div>
+        <div class="link-content">
+          <span class="link-title">Facebook</span>
+          <span class="link-description">
+            Cyberus Stud
+          </span>
+        </div>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+
+      <a
+        class="link"
+        href="https://www.instagram.com/cyberus.stud/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="link-icon">
+          <img
+            src="https://cdn.simpleicons.org/instagram/E4405F"
+            alt=""
+          />
+        </div>
+        <div class="link-content">
+          <span class="link-title">Instagram</span>
+          <span class="link-description">
+            Cyberus Stud
+          </span>
+        </div>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+
+      <a
+        class="link"
+        href="https://www.linkedin.com/company/cyberus-eg"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="link-icon">
+          <img
+            src="https://cdn.simpleicons.org/linkedin/0A66C2"
+            alt=""
+          />
+        </div>
+        <div class="link-content">
+          <span class="link-title">LinkedIn</span>
+          <span class="link-description">
+            Cyberus EG
+          </span>
+        </div>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+
+      <a
+        class="link"
+        href="cyberus-orientation.up.railway.app"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="link-icon">
+          <img src="logo2.png" alt="" />
+        </div>
+        <div class="link-content">
+          <span class="link-title">Hack Me</span>
+          <span class="link-description">
+            Cyberus Orientation
+          </span>
+        </div>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+
+    </nav>
+
+    <footer>
+      © <span id="year"></span> Cyberus.
+      All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
